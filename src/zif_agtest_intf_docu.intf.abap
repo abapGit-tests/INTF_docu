@@ -6,7 +6,9 @@ INTERFACE zif_agtest_intf_docu
 
   DATA test_attribute TYPE string .
 
-  EVENTS test_event .
+  EVENTS test_event
+    EXPORTING
+      VALUE(test_event_param) TYPE i .
 
   METHODS test_method
     IMPORTING
