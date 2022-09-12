@@ -8,5 +8,7 @@ INTERFACE zif_agtest_intf_docu
 
   EVENTS test_event .
 
-  METHODS test_method .
+  METHODS test_method
+    IMPORTING
+      !test_param TYPE i .
 ENDINTERFACE.
